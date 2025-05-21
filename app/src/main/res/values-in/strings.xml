@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AI Voiceover</string>
+
+    <string name="control_audio">Kontrol Suara</string>
+    <string name="reset">Atur ulang</string>
+    <string name="pitch">Nada</string>
+    <string name="speed">Kecepatan</string>
+    <string name="type_here">Ketik di sini…</string>
+    <string name="no_saved_files">Tidak ada file yang disimpan</string>
+    <string name="loading_languages">Memuat bahasa…</string>
+    <string name="default_language">Bahasa Default</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="play">Putar</string>
+    <string name="download">Unduh</string>
+    <string name="send">Kirim</string>
+    <string name="delete">Hapus</string>
+    <string name="grant_permission">Berikan Izin</string>
+    <string name="select_default_language">Pilih Bahasa Default</string>
+    <string name="continue_">Lanjutkan</string>
+
+    <!-- Policy Link -->
+    <string name="privacy_policy_text">Kebijakan Privasi</string>
+    <string name="terms_of_use_text">Ketentuan Penggunaan</string>
+    <string name="privacy_agreement_text">Dengan melanjutkan, Anda menyetujui <a href="%1$s">Kebijakan Privasi</a> dan <a href="%2$s">Ketentuan Penggunaan</a> kami.</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title_1">Masukkan Teks</string>
+    <string name="tutorial_title_2">Putar Suara</string>
+    <string name="tutorial_title_3">Kontrol Keluaran Suara</string>
+    <string name="tutorial_title_4">Ubah Bahasa</string>
+    <string name="tutorial_desc_1">Ketik atau tempel teks yang ingin diubah menjadi ucapan.</string>
+    <string name="tutorial_desc_2">Ketuk untuk mendengarkan teks yang diucapkan dengan suara keras.</string>
+    <string name="tutorial_desc_3">Di sini Anda dapat menyesuaikan nada dan kecepatan.</string>
+    <string name="tutorial_desc_4">Anda dapat mengubah pilihan bahasa dan jenis suara yang tersedia di sini.</string>
+
+    <!-- Preferences -->
+    <string name="language_settings">Pengaturan Bahasa</string>
+    <string name="app_language_title">Bahasa Aplikasi</string>
+    <string name="legal_and_support">Hukum dan Dukungan</string>
+    <string name="legal">Hukum</string>
+    <string name="support">Dukungan</string>
+    <string name="privacy_policy_title">Kebijakan Privasi</string>
+    <string name="terms_of_service_title">Ketentuan Layanan</string>
+    <string name="feedback_title">Masukan</string>
+    <string name="about_title">Tentang</string>
+    <string name="rate_app_title">Nilai Aplikasi</string>
+
+    <!-- Bottom Nav Title -->
+    <string name="speech">Ucapan</string>
+    <string name="folder">Berkas</string>
+    <string name="options">Pilihan</string>
+
+    <!-- Toast Messages -->
+    <string name="please_complete_the_setup_first">Harap selesaikan pengaturan terlebih dahulu</string>
+    <string name="failed_to_download_file">Gagal mengunduh berkas</string>
+    <string name="error_creating_file_entry">Terjadi kesalahan saat membuat entri file</string>
+    <string name="error_creating_subfolder">Kesalahan saat membuat subfolder</string>
+    <string name="file_download_started">Pengunduhan berkas telah dimulai</string>
+    <string name="file_downloaded_to_downloads_folder">File diunduh ke folder Unduhan/%1$s</string>
+    <string name="file_deleted_successfully">File berhasil dihapus</string>
+    <string name="failed_to_delete_file">Gagal menghapus file</string>
+    <string name="audio_file_not_found_download_it_first">Berkas audio tidak ditemukan. Unduh dulu</string>
+    <string name="storage_permission_required_to_download">Izin penyimpanan diperlukan untuk mengunduh</string>
+    <string name="failed_to_initialize_text_to_speech_engine">Gagal menginisialisasi mesin Text-to-Speech</string>
+    <string name="cannot_speak_empty_text">Tidak dapat mengucapkan teks kosong</string>
+    <string name="cannot_save_empty_text">Tidak dapat menyimpan teks kosong</string>
+    <string name="text_saved_to_internal_storage">Teks disimpan ke penyimpanan internal</string>
+    <string name="failed_to_save_text">Gagal menyimpan teks</string>
+    <string name="texttospeech_initialization_failed">Inisialisasi TextToSpeech gagal</string>
+    <string name="please_select_a_voice">Silakan pilih suara</string>
+    <string name="no_voices_available_for_please_install_voice_data">Tidak ada suara yang tersedia untuk %1$s. Silakan instal data suara.</string>
+
+    <!-- Dialog -->
+    <string name="delete_title_dialog">Konfirmasi Penghapusan</string>
+    <string name="message_dialog_delete">Apakah Anda yakin ingin menghapus berkas teks ini? File audio yang diunduh tidak akan dihapus.</string>
+    <string name="positive_button_dialog_delete">Hapus</string>
+    <string name="negative_button_dialog_delete">Batal</string>
+    <string name="share_audio_file">Bagikan file audio</string>
+    <string name="about_application">Tentang Aplikasi</string>
+    <string name="save">Simpan</string>
+    <string name="intro_1">Ubah Teks Menjadi Pengisi Suara yang Menakjubkan</string>
+    <string name="intro_2">Bebaskan kekuatan AI untuk menciptakan sulih suara yang terdengar alami untuk video, podcast, presentasi, dan banyak lagi!</string>
+
+    <string name="update_available">Versi baru aplikasi telah tersedia</string>
+    <string name="update">Pembaruan</string>
+    <string name="check_update">Cek pembaruan</string>
+    <string name="update_not_found">Pembaruan tidak ditemukan!</string>
+    <string name="update_error">Kesalahan pembaruan!</string>
+
+    <!--rating dialog-->
+    <string name="rating_promote">Kami berusaha untuk memberikan pengalaman pengguna yang lebih baik. \nKami sangat menghargai penilaian kamu.</string>
+    <string name="rating_title_1">Oh, tidak!</string>
+    <string name="rating_title_2">Kami juga menyukaimu!</string>
+    <string name="rating_text_1">Silakan berikan masukan kepada kami.</string>
+    <string name="rating_text_4">Terima kasih atas umpan balik kamu.</string>
+    <string name="feedback_dialog_title">Saran &amp; Masukan</string>
+    <string name="feedback_hint_text">Sarankan kami apa yang kurang dan kami berusaha untuk mengatasinya.</string>
+    <string name="select_star">Pilih bintang</string>
+    <string name="feedback_button">Masukan</string>
+    <string name="submit_button">Kirim</string>
+    <string name="please_explain_in_more_detail">Tolong jelaskan lebih detail</string>
+    <string name="app_feedback">Umpan Balik Aplikasi</string>
+    <string name="send_via_email">Kirim melalui email</string>
+    <string name="could_not_find_an_application_to_send_email">Tidak dapat menemukan aplikasi untuk mengirim email</string>
+    <string name="network_problem">Jaringan bermasalah</string>
+
+    <string name="select_voice_first">Pilih suara…</string>
+    <string name="select_voice_language">Pilih Bahasa Suara</string>
+    <string name="voice_storage">Penyimpanan Suara</string>
+
+    <string name="file_already_exists">Berkas Sudah Ada</string>
+    <string name="continue_downloading_anyway">Tetap lanjutkan mengunduh?</string>
+
+    <string name="about">Tentang</string>
+    <string name="show_author">Tampilkan Penulis</string>
+    <string name="show_description">Tampilkan Deskripsi</string>
+    <string name="show_version">Tampilkan Versi</string>
+    <string name="show_license_badges">Tampilkan Lencana Lisensi</string>
+
+    <string name="version_code">Versi: %1$s</string>
+    <string name="build_date">Tanggal Pembuatan: %1$s</string>
+    <string name="developer_name">Pengembang: BONO DIGITAL STUDIO</string>
+
+    <string name="stop">Berhenti</string>
+
+    <string name="downloading">Mengunduh</string>
+
+    <string name="clipboard_not_text">Clipboard bukan teks</string>
+
+    <string name="could_not_open_galaxy_store">Tidak dapat membuka Samsung Galaxy Store</string>
+
+    <string name="galaxy_store_not_found">Samsung Galaxy Store tidak ditemukan</string>
+
+    <string name="unknown_installer">Penginstal tidak dikenal</string>
+
+    <string name="failed_to_load_languages">Gagal memuat bahasa</string>
+
+    <string name="install_voice_data_title">Instal Data Suara?</string>
+
+    <string name="install_voice_data">Instal Data Suara</string>
+
+    <string name="install_voice_data_instructions">Untuk menginstal data suara, silakan buka Setelan > Aksesibilitas > Keluaran teks ke ucapan > Instal data suara. </string>
+
+    <string name="install">Instal</string>
+
+</resources>

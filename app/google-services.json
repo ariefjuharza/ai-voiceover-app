@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "529387623500",
+    "project_id": "fir-ai-for-ai-voiceover",
+    "storage_bucket": "fir-ai-for-ai-voiceover.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529387623500:android:12f4576b84311634a510e9",
+        "android_client_info": {
+          "package_name": "com.rpmstudio.texttospeech"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBb3p7zLc7HfajVpOWlcZF9EDiQgBUlwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

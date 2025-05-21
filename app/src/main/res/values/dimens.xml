@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_margin">@dimen/spacing_small</dimen>
+
+    <dimen name="spacing_xxDouble">@dimen/_45sdp</dimen>
+    <dimen name="spacing_xDouble">@dimen/_34sdp</dimen>
+    <dimen name="spacing_double">@dimen/_22sdp</dimen>
+    <dimen name="spacing_normal">@dimen/_13sdp</dimen>
+    <dimen name="spacing_medium">@dimen/_8sdp</dimen>
+    <dimen name="spacing_small">@dimen/_6sdp</dimen>
+    <dimen name="spacing_tiny">@dimen/_4sdp</dimen>
+    <dimen name="spacing_xTiny">@dimen/_2sdp</dimen>
+    <dimen name="spacing_xxTiny">@dimen/_1sdp</dimen>
+    <dimen name="spacing_zero">0dp</dimen>
+
+    <dimen name="text_tiny">@dimen/_7ssp</dimen>
+    <dimen name="text_smallest">@dimen/_10ssp</dimen>
+    <dimen name="text_small">@dimen/_12ssp</dimen>
+    <dimen name="text_medium">@dimen/_14ssp</dimen>
+    <dimen name="text_normal">@dimen/_17ssp</dimen>
+    <dimen name="text_large">@dimen/_20ssp</dimen>
+    <dimen name="text_largest">@dimen/_28ssp</dimen>
+
+    <dimen name="text_board_large">@dimen/_22ssp</dimen>
+    <dimen name="text_board_largest">@dimen/_50ssp</dimen>
+
+    <dimen name="logo_normal">@dimen/_60sdp</dimen>
+    <dimen name="logo_medium">@dimen/_40sdp</dimen>
+    <dimen name="logo_small">@dimen/_20sdp</dimen>
+    <dimen name="logo_xSmall">@dimen/_16sdp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">0dp</dimen>
+
+    <dimen name="bottom_sheet_peek_height_portrait">150dp</dimen>
+    <dimen name="bottom_sheet_peek_height_landscape">50dp</dimen>
+
+    <dimen name="native_custom_content_margin_h">10dp</dimen>
+    <dimen name="native_custom_content_margin_v">8dp</dimen>
+    <dimen name="native_custom_icon_w_h">0dp</dimen>
+    <dimen name="native_custom_icon_margin">8dp</dimen>
+    <dimen name="native_custom_title_w">0dp</dimen>
+    <dimen name="native_custom_title_margin">8dp</dimen>
+    <dimen name="native_custom_description_w">0dp</dimen>
+    <dimen name="native_custom_description_margin">8dp</dimen>
+    <dimen name="native_custom_cta_margin">8dp</dimen>
+    <dimen name="native_custom_cta_padding_h">20dp</dimen>
+    <dimen name="base_elevation">2dp</dimen>
+
+</resources>

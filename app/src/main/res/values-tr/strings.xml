@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">AI Seslendirme</string>
+
+    <string name="control_audio">Ses Çıkışını Kontrol Et</string>
+    <string name="reset">Sıfırla</string>
+    <string name="pitch">Saha</string>
+    <string name="speed">Hız</string>
+    <string name="type_here">Buraya yazın…</string>
+    <string name="no_saved_files">Kaydedilmiş dosya yok</string>
+    <string name="loading_languages">Diller yükleniyor…</string>
+    <string name="default_language">Varsayılan\nDil</string>
+    <string name="confirm">Onaylamak</string>
+    <string name="play">Oynamak</string>
+    <string name="download">İndirmek</string>
+    <string name="send">Göndermek</string>
+    <string name="delete">Kaldırmak</string>
+    <string name="grant_permission">İzin Vermek</string>
+    <string name="select_default_language">Varsayılan Dili Seçin</string>
+    <string name="continue_">Devam etmek</string>
+
+    <!-- Policy Link -->
+    <string name="privacy_policy_text">Gizlilik Politikası</string>
+    <string name="terms_of_use_text">Kullanım Şartları</string>
+    <string name="privacy_agreement_text">Devam ederek <a href="%1$s">Gizlilik Politikası</a> ve <a href="%2$s">Kullanım Şartları</a> kabul etmiş olursunuz.</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title_1">Metin Girin</string>
+    <string name="tutorial_title_2">Sesi Oynat</string>
+    <string name="tutorial_title_3">Ses Çıkışını Kontrol Et</string>
+    <string name="tutorial_title_4">Dili değiştir</string>
+    <string name="tutorial_desc_1">Konuşmaya dönüştürmek istediğiniz metni yazın veya yapıştırın.</string>
+    <string name="tutorial_desc_2">Metnin sesli okunmasını dinlemek için dokunun.</string>
+    <string name="tutorial_desc_3">Burada perdeyi ve hızı ayarlayabilirsiniz.</string>
+    <string name="tutorial_desc_4">Burada mevcut dil seçeneklerini ve ses türlerini değiştirebilirsiniz.</string>
+
+    <!-- Preferences -->
+    <string name="language_settings">Dil Ayarları</string>
+    <string name="app_language_title">Uygulama Dili</string>
+    <string name="legal_and_support">Hukuk ve Destek</string>
+    <string name="legal">Hukuk</string>
+    <string name="support">Destek</string>
+    <string name="privacy_policy_title">Gizlilik Politikası</string>
+    <string name="terms_of_service_title">Hizmet Şartları</string>
+    <string name="feedback_title">Geri bildirim</string>
+    <string name="about_title">Hakkında</string>
+    <string name="rate_app_title">Uygulama Puanı</string>
+
+    <!-- Bottom Nav Title -->
+    <string name="speech">Konuşma</string>
+    <string name="folder">Dosya</string>
+    <string name="options">Seçenekler</string>
+
+    <!-- Toast Messages -->
+    <string name="please_complete_the_setup_first">Lütfen önce kurulumu tamamlayın</string>
+    <string name="failed_to_download_file">Dosya indirilemedi</string>
+    <string name="error_creating_file_entry">Dosya girişi oluşturulurken hata oluştu</string>
+    <string name="error_creating_subfolder">Alt klasör oluşturulurken hata oluştu</string>
+    <string name="file_download_started">Dosya indirme işlemi başladı</string>
+    <string name="file_downloaded_to_downloads_folder">Dosya İndirilenler/%1$s klasörüne indirildi</string>
+    <string name="file_deleted_successfully">Dosya başarıyla silindi</string>
+    <string name="failed_to_delete_file">Dosya silinemedi</string>
+    <string name="audio_file_not_found_download_it_first">Ses dosyası bulunamadı. Önce indirin</string>
+    <string name="storage_permission_required_to_download">İndirmek için depolama izni gerekiyor</string>
+    <string name="failed_to_initialize_text_to_speech_engine">Metinden Konuşmaya motoru başlatılamadı</string>
+    <string name="cannot_speak_empty_text">Boş metin söylenemez</string>
+    <string name="cannot_save_empty_text">Boş metin kaydedilemiyor</string>
+    <string name="text_saved_to_internal_storage">Metin dahili depolamaya kaydedildi</string>
+    <string name="failed_to_save_text">Metin kaydedilemedi</string>
+    <string name="texttospeech_initialization_failed">TextToSpeech başlatma başarısız oldu</string>
+    <string name="please_select_a_voice">Lütfen bir ses seçin</string>
+    <string name="no_voices_available_for_please_install_voice_data">%1$s için ses bulunamadı. Lütfen ses verisini yükleyin.</string>
+
+    <!-- Dialog -->
+    <string name="delete_title_dialog">Silmeyi Onayla</string>
+    <string name="message_dialog_delete">Bu metin dosyasını silmek istediğinizden emin misiniz? İndirilen ses dosyaları silinmeyecektir.</string>
+    <string name="positive_button_dialog_delete">Silmek</string>
+    <string name="negative_button_dialog_delete">İptal etmek</string>
+    <string name="share_audio_file">Ses dosyasını paylaş</string>
+    <string name="about_application">Uygulama Hakkında</string>
+    <string name="save">Kaydetmek</string>
+    <string name="intro_1">Metni Çarpıcı Seslendirmelere Dönüştürün</string>
+    <string name="intro_2">Videolarınız, podcast\'leriniz, sunumlarınız ve daha fazlası için doğal sesli seslendirmeler oluşturmak amacıyla yapay zekanın gücünden yararlanın!</string>
+
+    <string name="update_available">Uygulamanın yeni bir sürümü mevcut</string>
+    <string name="update">Güncelleme</string>
+    <string name="check_update">Güncellemeyi Kontrol Et</string>
+    <string name="update_not_found">Güncelleme bulunamadı!</string>
+    <string name="update_error">Güncelleme hatası!</string>
+
+    <string name="rating_promote">Daha iyi bir kullanıcı deneyimi sağlamak için çabalıyoruz.\nGeri bildirimlerinizi gerçekten takdir ediyoruz.</string>
+    <string name="rating_title_1">Aman Tanrım!</string>
+    <string name="rating_title_2">Biz de sizi seviyoruz!</string>
+    <string name="rating_text_1">Lütfen bize geri bildirimlerinizi iletin.</string>
+    <string name="rating_text_4">Geri bildiriminiz için teşekkür ederiz.</string>
+    <string name="feedback_dialog_title">Öneriler ve Geri bildirim</string>
+    <string name="feedback_hint_text">Neyin eksik olduğunu bize önerin ve çözmeye çalışalım.</string>
+    <string name="select_star">Derecelendirmeyi seçin</string>
+    <string name="feedback_button">Geri bildirim</string>
+    <string name="submit_button">Gönder</string>
+    <string name="please_explain_in_more_detail">Lütfen daha ayrıntılı açıklayın</string>
+    <string name="app_feedback">Uygulama Geri Bildirimi</string>
+    <string name="send_via_email">E-posta ile gönder</string>
+    <string name="could_not_find_an_application_to_send_email">E-posta gönderilecek bir uygulama bulunamadı</string>
+    <string name="network_problem">Ağ sorunu</string>
+
+    <string name="select_voice_first">Sesi seçin…</string>
+    <string name="select_voice_language">Ses Dilini Seçin</string>
+    <string name="voice_storage">Ses Depolama</string>
+
+    <string name="file_already_exists">Dosya Zaten Var</string>
+    <string name="continue_downloading_anyway">Yine de indirmeye devam etmek istiyor musunuz?</string>
+
+    <string name="about">Hakkında</string>
+    <string name="show_author">Yazarı Göster</string>
+    <string name="show_description">Açıklamayı Göster</string>
+    <string name="show_version">Sürümü Göster</string>
+    <string name="show_license_badges">Lisans Rozetlerini Göster</string>
+
+    <string name="version_code">Sürüm: %1$s</string>
+    <string name="build_date">Yapım Tarihi: %1$s</string>
+    <string name="developer_name">Geliştirici: BONO DIGITAL STUDIO</string>
+
+    <string name="stop">Durdur</string>
+    <string name="downloading">İndiriliyor</string>
+
+    <string name="clipboard_not_text">Panoya metin değil</string>
+    <string name="could_not_open_galaxy_store">Samsung Galaxy Store açılamadı</string>
+    <string name="galaxy_store_not_found">Samsung Galaxy Store bulunamadı</string>
+    <string name="unknown_installer">Bilinmeyen yükleyici</string>
+
+    <string name="failed_to_load_languages">Diller yüklenemedi</string>
+    <string name="install_voice_data_title">Ses Verisi Yüklensin mi?</string>
+    <string name="install_voice_data">Ses Verisi Yüklensin</string>
+    <string name="install_voice_data_instructions">Ses verisini yüklemek için lütfen Ayarlar > Erişilebilirlik > Metinden konuşmaya çıktı > Sesi yükle\'ye gidin veri.</string>
+
+    <string name="install">Yükle</string>
+
+</resources>

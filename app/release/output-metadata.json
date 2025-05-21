@@ -1,0 +1,37 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.rpmstudio.texttospeech",
+  "variantName": "release",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 250416036,
+      "versionName": "aivo-1.0.36",
+      "outputFile": "AI Voiceover aivo-1.0.36 (Build 250416036)-release.apk"
+    }
+  ],
+  "elementType": "File",
+  "baselineProfiles": [
+    {
+      "minApi": 28,
+      "maxApi": 30,
+      "baselineProfiles": [
+        "baselineProfiles/1/AI Voiceover aivo-1.0.36 (Build 250416036)-release.dm"
+      ]
+    },
+    {
+      "minApi": 31,
+      "maxApi": 2147483647,
+      "baselineProfiles": [
+        "baselineProfiles/0/AI Voiceover aivo-1.0.36 (Build 250416036)-release.dm"
+      ]
+    }
+  ],
+  "minSdkVersionForDexing": 24
+}

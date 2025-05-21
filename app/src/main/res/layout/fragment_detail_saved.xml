@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".fragment.DetailSavedFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_line">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvFileName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_normal"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:gravity="center"
+            android:textSize="@dimen/text_small"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="TTS_240830_001.txt" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/playBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/downloadBlock"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFileName">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivPlay"
+                android:layout_width="@dimen/spacing_xDouble"
+                android:layout_height="@dimen/spacing_xDouble"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:padding="@dimen/spacing_xTiny"
+                android:src="@drawable/user_speak_svgrepo_com"
+                app:layout_constraintBottom_toTopOf="@+id/tvPlay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationPlay"
+                android:layout_width="@dimen/spacing_xDouble"
+                android:layout_height="@dimen/spacing_xDouble"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/tvPlay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/animation_waiting" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:text="@string/play"
+                android:textSize="@dimen/text_smallest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ivPlay"
+                app:layout_constraintStart_toStartOf="@+id/ivPlay"
+                app:layout_constraintTop_toBottomOf="@+id/ivPlay" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/downloadBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/sendBlock"
+            app:layout_constraintStart_toEndOf="@+id/playBlock"
+            app:layout_constraintTop_toBottomOf="@+id/tvFileName">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivDownload"
+                android:layout_width="@dimen/spacing_xDouble"
+                android:layout_height="@dimen/spacing_xDouble"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:padding="@dimen/spacing_xTiny"
+                android:src="@drawable/download_minimalistic_svgrepo_com"
+                app:layout_constraintBottom_toTopOf="@+id/tvDownload"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationDownload"
+                android:layout_width="@dimen/spacing_xDouble"
+                android:layout_height="@dimen/spacing_xDouble"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/tvDownload"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/animation_waiting" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:text="@string/download"
+                android:textSize="@dimen/text_smallest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ivDownload"
+                app:layout_constraintStart_toStartOf="@+id/ivDownload"
+                app:layout_constraintTop_toBottomOf="@+id/ivDownload" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/sendBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/deleteBlock"
+            app:layout_constraintStart_toEndOf="@+id/downloadBlock"
+            app:layout_constraintTop_toBottomOf="@+id/tvFileName">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivSend"
+                android:layout_width="@dimen/spacing_xDouble"
+                android:layout_height="@dimen/spacing_xDouble"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:padding="@dimen/spacing_xTiny"
+                android:src="@drawable/share_circle_svgrepo_com"
+                app:layout_constraintBottom_toTopOf="@+id/tvSend"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:text="@string/send"
+                android:textSize="@dimen/text_smallest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ivSend"
+                app:layout_constraintStart_toStartOf="@+id/ivSend"
+                app:layout_constraintTop_toBottomOf="@+id/ivSend" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/deleteBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sendBlock"
+            app:layout_constraintTop_toBottomOf="@+id/tvFileName">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="@dimen/spacing_xDouble"
+                android:layout_height="@dimen/spacing_xDouble"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:padding="@dimen/spacing_xTiny"
+                android:src="@drawable/file_remove_svgrepo_com"
+                app:layout_constraintBottom_toTopOf="@+id/tvDelete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tvDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:text="@string/delete"
+                android:textSize="@dimen/text_smallest"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/ivDelete"
+                app:layout_constraintStart_toStartOf="@+id/ivDelete"
+                app:layout_constraintTop_toBottomOf="@+id/ivDelete" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottomBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSavedText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/spacing_normal"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:layout_marginEnd="@dimen/spacing_normal"
+                    android:layout_marginBottom="@dimen/spacing_medium"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="@dimen/spacing_medium"
+                    android:textSize="@dimen/text_smallest"
+                    tools:text="This is some plain text that can span multiple lines.
+                    \nThis is some plain text that can span multiple lines.
+                    \nThis is some plain text that can span multiple lines." />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

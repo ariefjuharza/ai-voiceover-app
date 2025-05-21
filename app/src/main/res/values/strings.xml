@@ -1,0 +1,152 @@
+<resources>
+    <string name="app_name">AI Voiceover</string>
+
+    <string name="control_audio">Control Voice Output</string>
+    <string name="reset">Reset</string>
+    <string name="pitch">Pitch</string>
+    <string name="speed">Speed</string>
+    <string name="type_here">Type here…</string>
+    <string name="no_saved_files">No saved files</string>
+    <string name="loading_languages">Loading languages…</string>
+    <string name="default_language">Default\nLanguage</string>
+    <string name="confirm">Confirm</string>
+    <string name="play">Play</string>
+    <string name="download">Download</string>
+    <string name="send">Send</string>
+    <string name="delete">Remove</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="select_default_language">Select Default Language</string>
+    <string name="continue_">Continue</string>
+
+    <!-- Policy Link -->
+    <string name="privacy_policy_url" translatable="false">https://rpmstudio.xyz/privacy-policy-for-ai-voiceover/</string>
+    <string name="terms_of_use_url" translatable="false">https://rpmstudio.xyz/end-user-license-agreement/</string>
+    <string name="privacy_policy_text">Privacy Policy</string>
+    <string name="terms_of_use_text">Terms of Use</string>
+    <string name="privacy_agreement_text">By continuing, you agree to our <a href="%1$s">Privacy Policy</a> and <a href="%2$s">Terms of Use</a>.</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title_1">Enter Text</string>
+    <string name="tutorial_title_2">Play Voice</string>
+    <string name="tutorial_title_3">Control Voice Output</string>
+    <string name="tutorial_title_4">Change Language</string>
+    <string name="tutorial_desc_1">Type or paste the text you want to convert to speech.</string>
+    <string name="tutorial_desc_2">Tap to hear the text spoken aloud.</string>
+    <string name="tutorial_desc_3">Here you can adjust the pitch and speed.</string>
+    <string name="tutorial_desc_4">You can change the language options and voice types available here.</string>
+
+    <!-- Preferences -->
+    <string name="language_settings">Language Settings</string>
+    <string name="app_language_title">App Language</string>
+    <string name="legal_and_support">Legal and Support</string>
+    <string name="legal">Legal</string>
+    <string name="support">Support</string>
+    <string name="privacy_policy_title">Privacy Policy</string>
+    <string name="terms_of_service_title">Terms of Service</string>
+    <string name="feedback_title">Feedback</string>
+    <string name="about_title">About</string>
+    <string name="rate_app_title">Rate App</string>
+
+    <!-- Bottom Nav Title -->
+    <string name="speech">Speech</string>
+    <string name="folder">Folder</string>
+    <string name="options">Options</string>
+
+    <!-- Toast Messages -->
+    <string name="please_complete_the_setup_first">Please complete the setup first</string>
+    <string name="failed_to_download_file">Failed to download file</string>
+    <string name="error_creating_file_entry">Error creating file entry</string>
+    <string name="error_creating_subfolder">Error creating subfolder</string>
+    <string name="file_download_started">File download started</string>
+    <string name="file_downloaded_to_downloads_folder">File downloaded to Downloads/%1$s folder</string>
+    <string name="file_deleted_successfully">File deleted successfully</string>
+    <string name="failed_to_delete_file">Failed to delete file</string>
+    <string name="audio_file_not_found_download_it_first">Audio file not found. Download it first</string>
+    <string name="storage_permission_required_to_download">Storage permission required to download</string>
+    <string name="failed_to_initialize_text_to_speech_engine">Failed to initialize Text-to-Speech engine</string>
+    <string name="cannot_speak_empty_text">Cannot speak empty text</string>
+    <string name="cannot_save_empty_text">Cannot save empty text</string>
+    <string name="text_saved_to_internal_storage">Text saved to internal storage</string>
+    <string name="failed_to_save_text">Failed to save text</string>
+    <string name="texttospeech_initialization_failed">TextToSpeech initialization failed</string>
+    <string name="please_select_a_voice">Please select a voice</string>
+    <string name="no_voices_available_for_please_install_voice_data">No voices available for %1$s. Please install voice data.</string>
+
+    <!-- Dialog -->
+    <string name="delete_title_dialog">Confirm Delete</string>
+    <string name="message_dialog_delete">Are you sure you want to delete this text file? Downloaded audio files will not be deleted.</string>
+    <string name="positive_button_dialog_delete">Delete</string>
+    <string name="negative_button_dialog_delete">Cancel</string>
+
+    <string name="share_audio_file">Share audio file</string>
+    <string name="about_application">About Application</string>
+    <string name="save">Save</string>
+    <string name="intro_1">Transform Text to Stunning Voiceovers</string>
+    <string name="intro_2">Unleash the power of AI to create natural-sounding voiceovers for your videos, podcasts, presentations, and more!</string>
+
+    <!-- Update -->
+    <string name="update_available">A new version of the app is available</string>
+    <string name="update">Update</string>
+    <string name="check_update">Check Update</string>
+    <string name="update_not_found">Update not found!</string>
+    <string name="update_error">Update error!</string>
+
+    <!--rating dialog-->
+    <string name="rating_promote">We strive to provide a better user experience.\nWe really appreciate your feedback.</string>
+    <string name="rating_title_1">Oh, no!</string>
+    <string name="rating_title_2">We love you too!</string>
+    <string name="rating_text_1">Please give us your feedback.</string>
+    <string name="rating_text_4">Thank you for your feedback.</string>
+    <string name="feedback_dialog_title">Suggestions &amp; Feedback</string>
+    <string name="feedback_hint_text">Suggest us what is missing and we try to solve it.</string>
+    <string name="select_star">Select rating</string>
+    <string name="feedback_button">Feedback</string>
+    <string name="submit_button">Submit</string>
+    <string name="please_explain_in_more_detail">Please explain in more detail</string>
+    <string name="app_feedback">App Feedback</string>
+    <string name="send_via_email">Send via email</string>
+    <string name="could_not_find_an_application_to_send_email">Could not find an application to send email</string>
+    <string name="network_problem">Network problem</string>
+
+    <string name="appwidget_text" translatable="false">Widget</string>
+    <string name="add_widget" translatable="false">Add widget</string>
+    <string name="app_widget_description" translatable="false">This is an app widget description</string>
+
+    <string name="select_voice_first">Select voice…</string>
+    <string name="select_voice_language">Select Voice Language</string>
+    <string name="voice_storage">Voice Storage</string>
+
+    <string name="file_already_exists">File Already Exists</string>
+    <string name="continue_downloading_anyway">Continue downloading anyway?</string>
+
+    <string name="about">About</string>
+    <string name="show_author">Show Author</string>
+    <string name="show_description">Show Description</string>
+    <string name="show_version">Show Version</string>
+    <string name="show_license_badges">Show License Badges</string>
+
+    <string name="version_code">Version: %1$s</string>
+    <string name="build_date">Build Date: %1$s</string>
+    <string name="developer_name">Developer: BONO DIGITAL STUDIO</string>
+
+    <string name="stop">Stop</string>
+    <string name="downloading">Downloading</string>
+
+    <string name="clipboard_not_text">Clipboard not text</string>
+
+    <string name="could_not_open_galaxy_store">Could not open Samsung Galaxy Store</string>
+    <string name="galaxy_store_not_found">Samsung Galaxy Store not found</string>
+    <string name="unknown_installer">Unknown installer</string>
+
+    <string name="failed_to_load_languages">Failed to load languages</string>
+    <string name="install_voice_data_title">Install Voice Data?</string>
+    <string name="install_voice_data">Install Voice Data</string>
+    <string name="install_voice_data_instructions">To install voice data, please go to Settings > Accessibility > Text-to-speech output > Install voice data.</string>
+
+    <string name="install">Install</string>
+
+    <string name="native_custom_ad_text" translatable="false">Ad</string>
+    <string name="native_custom_icon_description" translatable="false">Appodeal banner icon</string>
+    <string name="msg_token_fmt" translatable="false">FCM token received: %s</string>
+
+</resources>

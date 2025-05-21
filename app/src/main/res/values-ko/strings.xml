@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">AI 음성 해설</string>
+
+    <string name="control_audio">음성 출력 제어</string>
+    <string name="reset">다시 놓기</string>
+    <string name="pitch">정점</string>
+    <string name="speed">속도</string>
+    <string name="type_here">여기에 입력하세요…</string>
+    <string name="no_saved_files">저장된 파일이 없습니다</string>
+    <string name="loading_languages">언어 로딩 중…</string>
+    <string name="default_language">기본\n언어</string>
+    <string name="confirm">확인하다</string>
+    <string name="play">놀다</string>
+    <string name="download">다운로드</string>
+    <string name="send">보내다</string>
+    <string name="delete">제거하다</string>
+    <string name="grant_permission">허가를 부여하다</string>
+    <string name="select_default_language">기본 언어 선택</string>
+    <string name="continue_">계속하다</string>
+
+    <!-- Policy Link -->
+    <string name="privacy_policy_text">개인정보 보호정책</string>
+    <string name="terms_of_use_text">이용 약관</string>
+    <string name="privacy_agreement_text">계속 진행하시면 당사의 <a href="%1$s">개인정보처리방침</a> 및 <a href="%2$s">이용약관</a> 에 동의하시는 것으로 간주됩니다.</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title_1">텍스트를 입력하세요</string>
+    <string name="tutorial_title_2">음성 재생</string>
+    <string name="tutorial_title_3">음성 출력 제어</string>
+    <string name="tutorial_title_4">언어 변경</string>
+    <string name="tutorial_desc_1">음성으로 변환하려는 텍스트를 입력하거나 붙여넣으세요.</string>
+    <string name="tutorial_desc_2">탭하면 텍스트를 음성으로 들을 수 있습니다.</string>
+    <string name="tutorial_desc_3">여기서 피치와 속도를 조정할 수 있습니다.</string>
+    <string name="tutorial_desc_4">여기에서 사용 가능한 언어 옵션과 음성 유형을 변경할 수 있습니다.</string>
+
+    <!-- Preferences -->
+    <string name="language_settings">언어 설정</string>
+    <string name="app_language_title">앱 언어</string>
+    <string name="legal_and_support">법률 및 지원</string>
+    <string name="legal">법률</string>
+    <string name="support">지원</string>
+    <string name="privacy_policy_title">개인정보 보호정책</string>
+    <string name="terms_of_service_title">서비스 약관</string>
+    <string name="feedback_title">피드백</string>
+    <string name="about_title">에 대한</string>
+    <string name="rate_app_title">앱 평가하기</string>
+
+    <!-- Bottom Nav Title -->
+    <string name="speech">연설</string>
+    <string name="folder">접는 사람</string>
+    <string name="options">옵션</string>
+
+    <!-- Toast Messages -->
+    <string name="please_complete_the_setup_first">먼저 설정을 완료해 주세요.</string>
+    <string name="failed_to_download_file">파일 다운로드에 실패했습니다</string>
+    <string name="error_creating_file_entry">파일 항목 생성 중 오류 발생</string>
+    <string name="error_creating_subfolder">하위 폴더 생성 오류</string>
+    <string name="file_download_started">파일 다운로드가 시작되었습니다</string>
+    <string name="file_downloaded_to_downloads_folder">파일이 Downloads/%1$s 폴더에 다운로드되었습니다.</string>
+    <string name="file_deleted_successfully">파일이 성공적으로 삭제되었습니다</string>
+    <string name="failed_to_delete_file">파일을 삭제하지 못했습니다</string>
+    <string name="audio_file_not_found_download_it_first">오디오 파일을 찾을 수 없습니다. 먼저 다운로드하세요</string>
+    <string name="storage_permission_required_to_download">다운로드하려면 저장 권한이 필요합니다.</string>
+    <string name="failed_to_initialize_text_to_speech_engine">Text-to-Speech 엔진을 초기화하는 데 실패했습니다.</string>
+    <string name="cannot_speak_empty_text">빈 텍스트를 말할 수 없습니다</string>
+    <string name="cannot_save_empty_text">빈 텍스트를 저장할 수 없습니다</string>
+    <string name="text_saved_to_internal_storage">내부 저장소에 저장된 텍스트</string>
+    <string name="failed_to_save_text">텍스트를 저장하지 못했습니다</string>
+    <string name="texttospeech_initialization_failed">TextToSpeech 초기화에 실패했습니다.</string>
+    <string name="please_select_a_voice">음성을 선택해주세요</string>
+    <string name="no_voices_available_for_please_install_voice_data">%1$s에 사용 가능한 음성이 없습니다. 음성 데이터를 설치해 주세요.</string>
+
+    <!-- Dialog -->
+    <string name="delete_title_dialog">삭제 확인</string>
+    <string name="message_dialog_delete">이 텍스트 파일을 삭제하시겠습니까? 다운로드한 오디오 파일은 삭제되지 않습니다.</string>
+    <string name="positive_button_dialog_delete">삭제</string>
+    <string name="negative_button_dialog_delete">취소</string>
+    <string name="share_audio_file">오디오 파일 공유</string>
+    <string name="about_application">신청에 대하여</string>
+    <string name="save">구하다</string>
+    <string name="intro_1">텍스트를 놀라운 음성 해설로 변환</string>
+    <string name="intro_2">AI의 힘을 활용해 비디오, 팟캐스트, 프레젠테이션 등을 위한 자연스러운 음성 해설을 만들어 보세요!</string>
+
+    <string name="update_available">앱의 새 버전을 사용할 수 있습니다.</string>
+    <string name="update">업데이트</string>
+    <string name="check_update">업데이트 확인</string>
+    <string name="update_not_found">업데이트를 찾을 수 없습니다!</string>
+    <string name="update_error">업데이트 오류!</string>
+
+    <string name="rating_promote">저희는 더 나은 사용자 경험을 제공하기 위해 노력합니다.\n귀하의 피드백에 진심으로 감사드립니다.</string>
+    <string name="rating_title_1">아니요!</string>
+    <string name="rating_title_2">저희도 당신을 사랑합니다!</string>
+    <string name="rating_text_1">귀하의 피드백을 주세요.</string>
+    <string name="rating_text_4">귀하의 피드백에 감사드립니다.</string>
+    <string name="feedback_dialog_title">제안 &amp; 피드백</string>
+    <string name="feedback_hint_text">누락된 부분을 제안해 주시면 해결해 드리겠습니다.</string>
+    <string name="select_star">평가 선택</string>
+    <string name="feedback_button">피드백</string>
+    <string name="submit_button">제출</string>
+    <string name="please_explain_in_more_detail">자세히 설명해 주세요</string>
+    <string name="app_feedback">앱 피드백</string>
+    <string name="send_via_email">이메일로 보내기</string>
+    <string name="could_not_find_an_application_to_send_email">이메일을 보낼 애플리케이션을 찾을 수 없습니다</string>
+    <string name="network_problem">네트워크 문제</string>
+
+    <string name="select_voice_first">음성 선택…</string>
+    <string name="select_voice_language">음성 언어 선택</string>
+    <string name="voice_storage">음성 저장소</string>
+
+    <string name="file_already_exists">파일이 이미 존재합니다</string>
+    <string name="continue_downloading_anyway">어쨌든 다운로드를 계속하시겠습니까?</string>
+
+    <string name="about">정보</string>
+    <string name="show_author">작성자 표시</string>
+    <string name="show_description">설명 표시</string>
+    <string name="show_version">버전 표시</string>
+    <string name="show_license_badges">라이선스 배지 표시</string>
+
+    <string name="version_code">버전: %1$s</string>
+    <string name="build_date">빌드 날짜: %1$s</string>
+    <string name="developer_name">개발자: BONO DIGITAL STUDIO</string>
+
+    <string name="stop">중지</string>
+    <string name="downloading">다운로드 중</string>
+
+    <string name="clipboard_not_text">클립보드가 텍스트가 아닙니다</string>
+    <string name="could_not_open_galaxy_store">Samsung Galaxy Store를 열 수 없습니다</string>
+    <string name="galaxy_store_not_found">Samsung Galaxy Store를 찾을 수 없습니다</string>
+    <string name="unknown_installer">알 수 없는 설치 프로그램</string>
+
+    <string name="failed_to_load_languages">언어를 불러오지 못했습니다</string>
+    <string name="install_voice_data_title">음성 데이터를 설치하시겠습니까?</string>
+    <string name="install_voice_data">음성 데이터를 설치하시겠습니까?</string>
+    <string name="install_voice_data_instructions">음성 데이터를 설치하려면 설정 > 접근성 > 텍스트 음성 변환 출력 > 음성 데이터 설치로 이동하세요.</string>
+
+    <string name="install">설치</string>
+
+</resources>
