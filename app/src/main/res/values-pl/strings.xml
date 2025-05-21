@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <string name="app_name">AI Voiceover</string>
+
+    <string name="control_audio">Sterowanie wyjściem głosu</string>
+    <string name="reset">Nastawić</string>
+    <string name="pitch">Poziom</string>
+    <string name="speed">Prędkość</string>
+    <string name="type_here">Wpisz tutaj…</string>
+    <string name="no_saved_files">Brak zapisanych plików</string>
+    <string name="loading_languages">Ładowanie języków…</string>
+    <string name="default_language">Domyślny\nJęzyk</string>
+    <string name="confirm">Potwierdzać</string>
+    <string name="play">Grać</string>
+    <string name="download">Pobierać</string>
+    <string name="send">Wysłać</string>
+    <string name="delete">Usunąć</string>
+    <string name="grant_permission">Udziel pozwolenia</string>
+    <string name="select_default_language">Wybierz domyślny język</string>
+    <string name="continue_">Kontynuować</string>
+
+    <!-- Policy Link -->
+    <string name="privacy_policy_text">Polityka prywatności</string>
+    <string name="terms_of_use_text">Warunki korzystania</string>
+    <string name="privacy_agreement_text">Kontynuując, akceptujesz naszą <a href="%1$s">Polityka prywatności</a> i <a href="%2$s">Warunki korzystania</a>.</string>
+
+    <!-- Tutorial -->
+    <string name="tutorial_title_1">Wprowadź tekst</string>
+    <string name="tutorial_title_2">Odtwórz głos</string>
+    <string name="tutorial_title_3">Sterowanie wyjściem głosu</string>
+    <string name="tutorial_title_4">Zmień język</string>
+    <string name="tutorial_desc_1">Wpisz lub wklej tekst, który chcesz zamienić na mowę.</string>
+    <string name="tutorial_desc_2">Kliknij, aby usłyszeć tekst czytany na głos.</string>
+    <string name="tutorial_desc_3">Tutaj możesz dostosować wysokość dźwięku i prędkość.</string>
+    <string name="tutorial_desc_4">Tutaj możesz zmienić dostępne opcje językowe i typy głosów.</string>
+
+    <!-- Preferences -->
+    <string name="language_settings">Ustawienia języka</string>
+    <string name="app_language_title">Język aplikacji</string>
+    <string name="legal_and_support">Prawo i wsparcie</string>
+    <string name="legal">Prawo</string>
+    <string name="support">Wsparcie</string>
+    <string name="privacy_policy_title">Polityka prywatności</string>
+    <string name="terms_of_service_title">Warunki korzystania z usługi</string>
+    <string name="feedback_title">Informacja zwrotna</string>
+    <string name="about_title">O</string>
+    <string name="rate_app_title">Oceń aplikację</string>
+
+    <!-- Bottom Nav Title -->
+    <string name="speech">Przemówienie</string>
+    <string name="folder">Falcówka</string>
+    <string name="options">Opcje</string>
+
+    <!-- Toast Messages -->
+    <string name="please_complete_the_setup_first">Najpierw zakończ konfigurację</string>
+    <string name="failed_to_download_file">Nie udało się pobrać pliku</string>
+    <string name="error_creating_file_entry">Błąd podczas tworzenia wpisu pliku</string>
+    <string name="error_creating_subfolder">Błąd podczas tworzenia podfolderu</string>
+    <string name="file_download_started">Rozpoczęto pobieranie pliku</string>
+    <string name="file_downloaded_to_downloads_folder">Plik pobrany do folderu Pobrane/%1$s</string>
+    <string name="file_deleted_successfully">Plik został pomyślnie usunięty</string>
+    <string name="failed_to_delete_file">Nie udało się usunąć pliku</string>
+    <string name="audio_file_not_found_download_it_first">Nie znaleziono pliku audio. Najpierw pobierz</string>
+    <string name="storage_permission_required_to_download">Do pobrania wymagane jest zezwolenie na przechowywanie</string>
+    <string name="failed_to_initialize_text_to_speech_engine">Nie udało się zainicjować modułu przetwarzania tekstu na mowę</string>
+    <string name="cannot_speak_empty_text">Nie można mówić pustym tekstem</string>
+    <string name="cannot_save_empty_text">Nie można zapisać pustego tekstu</string>
+    <string name="text_saved_to_internal_storage">Tekst zapisany w pamięci wewnętrznej</string>
+    <string name="failed_to_save_text">Nie udało się zapisać tekstu</string>
+    <string name="texttospeech_initialization_failed">Nie powiodła się inicjalizacja funkcji TextToSpeech</string>
+    <string name="please_select_a_voice">Proszę wybrać głos</string>
+    <string name="no_voices_available_for_please_install_voice_data">Brak dostępnych głosów dla %1$s. Proszę zainstalować dane głosowe.</string>
+
+    <!-- Dialog -->
+    <string name="delete_title_dialog">Potwierdź usunięcie</string>
+    <string name="message_dialog_delete">Czy na pewno chcesz usunąć ten plik tekstowy? Pobrane pliki audio nie zostaną usunięte.</string>
+    <string name="positive_button_dialog_delete">Usuwać</string>
+    <string name="negative_button_dialog_delete">Anulować</string>
+    <string name="share_audio_file">Udostępnij plik audio</string>
+    <string name="about_application">O aplikacji</string>
+    <string name="save">Ratować</string>
+    <string name="intro_1">Przekształć tekst w oszałamiające nagrania głosowe</string>
+    <string name="intro_2">Wykorzystaj potencjał sztucznej inteligencji, aby tworzyć naturalnie brzmiące podkłady głosowe do filmów, podcastów, prezentacji i innych materiałów!</string>
+
+    <string name="update_available">Dostępna jest nowa wersja aplikacji</string>
+    <string name="update">Aktualizacja</string>
+    <string name="check_update">Sprawdź aktualizację</string>
+    <string name="update_not_found">Nie znaleziono aktualizacji!</string>
+    <string name="update_error">Błąd aktualizacji!</string>
+
+    <string name="rating_promote">Staramy się zapewnić lepsze wrażenia użytkownika.\nNaprawdę doceniamy Twoją opinię.</string>
+    <string name="rating_title_1">Och, nie!</string>
+    <string name="rating_title_2">My też Cię kochamy!</string>
+    <string name="rating_text_1">Przekaż nam swoją opinię.</string>
+    <string name="rating_text_4">Dziękujemy za opinię.</string>
+    <string name="feedback_dialog_title">Sugestie i Opinia</string>
+    <string name="feedback_hint_text">Zasugeruj nam, czego brakuje, a my postaramy się to rozwiązać.</string>
+    <string name="select_star">Wybierz ocenę</string>
+    <string name="feedback_button">Opinia</string>
+    <string name="submit_button">Prześlij</string>
+    <string name="please_explain_in_more_detail">Proszę wyjaśnić bardziej szczegółowo</string>
+    <string name="app_feedback">Opinia o aplikacji</string>
+    <string name="send_via_email">Wyślij e-mailem</string>
+    <string name="could_not_find_an_application_to_send_email">Nie można znaleźć aplikacji do wysyłania wiadomości e-mail</string>
+    <string name="network_problem">Problem z siecią</string>
+
+    <string name="select_voice_first">Wybierz głos…</string>
+    <string name="select_voice_language">Wybierz język głosu</string>
+    <string name="voice_storage">Pamięć głosowa</string>
+
+    <string name="file_already_exists">Plik już istnieje</string>
+    <string name="continue_downloading_anyway">Czy mimo to kontynuować pobieranie?</string>
+
+    <string name="about">Informacje</string>
+    <string name="show_author">Pokaż autora</string>
+    <string name="show_description">Pokaż opis</string>
+    <string name="show_version">Pokaż wersję</string>
+    <string name="show_license_badges">Pokaż odznaki licencji</string>
+
+    <string name="version_code">Wersja: %1$s</string>
+    <string name="build_date">Data budowy: %1$s</string>
+    <string name="developer_name">Deweloper: BONO DIGITAL STUDIO</string>
+
+    <string name="stop">Zatrzymaj</string>
+    <string name="downloading">Pobieranie</string>
+
+    <string name="clipboard_not_text">Schowek nie jest tekstem</string>
+    <string name="could_not_open_galaxy_store">Nie można otworzyć sklepu Samsung Galaxy Store</string>
+    <string name="galaxy_store_not_found">Sklep Samsung Galaxy Store nie został znaleziony</string>
+    <string name="unknown_installer">Nieznany instalator</string>
+
+    <string name="failed_to_load_languages">Nie udało się załadować języków</string>
+    <string name="install_voice_data_title">Czy zainstalować dane głosowe?</string>
+    <string name="install_voice_data">Czy zainstalować dane głosowe</string>
+    <string name="install_voice_data_instructions">Aby zainstalować dane głosowe, przejdź do Ustawienia > Ułatwienia dostępu > Tekst na mowę > Zainstaluj dane głosowe.</string>
+
+    <string name="install">Zainstaluj</string>
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ttsFragment">
+
+    <fragment
+        android:id="@+id/ttsFragment"
+        android:name="com.rpmstudio.texttospeech.fragment.TTSFragment"
+        android:label="TTSFragment"
+        tools:layout="@layout/fragment_t_t_s">
+        <action
+            android:id="@+id/action_ttsFragment_to_ttsStorageFragment"
+            app:destination="@id/ttsStorageFragment" />
+        <action
+            android:id="@+id/action_ttsFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ttsStorageFragment"
+        android:name="com.rpmstudio.texttospeech.fragment.SavedListFragment"
+        android:label="SavedListFragment"
+        tools:layout="@layout/fragment_saved_list">
+        <action
+            android:id="@+id/action_ttsStorageFragment_to_ttsFragment"
+            app:destination="@id/ttsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.rpmstudio.texttospeech.fragment.SettingsFragment"
+        android:label="SettingsFragment">
+        <action
+            android:id="@+id/action_settingsFragment_to_ttsFragment"
+            app:destination="@id/ttsFragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,122 @@
+[versions]
+aboutlibraries = "11.6.3"
+agp = "8.8.2"
+composeBom = "2025.04.00"
+coreSplashscreen = "1.0.1"
+dotsindicator = "5.1.0"
+firebaseBom = "33.12.0"
+kotlin = "2.1.20"
+coreKtx = "1.16.0"
+integrity = "1.4.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+lifecycle = "2.8.7"
+generativeai = "0.9.0"
+googleAndroidLibrariesMapsplatformSecretsGradlePlugin = "2.0.1"
+fragmentKtx = "1.8.6"
+constraintlayout = "2.2.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+activity = "1.10.1"
+legacySupportV4 = "1.0.0"
+media = "1.7.0"
+navigationFragmentKtx = "2.8.9"
+recyclerview = "1.4.0"
+ratingdialog = "2.0.0"
+gson = "2.13.0"
+coilCompose = "3.1.0"
+keyboardvisibility = "3.0.0-RC3"
+preference = "1.2.1"
+taptargetview = "1.15.0"
+reviewKtx = "2.0.2"
+appUpdateKtx = "2.1.0"
+googleServices = "4.4.2"
+crashlytics = "3.0.3"
+appodeal = "3.5.1.0"
+lottie = "6.6.6"
+perf = "1.4.2"
+runner = "1.6.2"
+core = "1.6.1"
+playServicesAds = "24.2.0"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-core-splashscreen = { module = "androidx.core:core-splashscreen", version.ref = "coreSplashscreen" }
+androidx-media = { module = "androidx.media:media", version.ref = "media" }
+androidx-navigation-fragment-ktx = { module = "androidx.navigation:navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+androidx-navigation-ui-ktx = { module = "androidx.navigation:navigation-ui-ktx", version.ref = "navigationFragmentKtx" }
+dotsindicator = { module = "com.tbuonomo:dotsindicator", version.ref = "dotsindicator" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidx-lifecycle-process = { group = "androidx.lifecycle", name = "lifecycle-process", version.ref = "lifecycle" }
+generativeai = { group = "com.google.ai.client.generativeai", name = "generativeai", version.ref = "generativeai" }
+androidx-fragment-ktx = { group = "androidx.fragment", name = "fragment-ktx", version.ref = "fragmentKtx" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity-ktx", version.ref = "activity" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activity" }
+androidx-legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+integrity = { module = "com.google.android.play:integrity", version.ref = "integrity" }
+
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+io-coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coilCompose" }
+io-coil-network-okhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coilCompose" }
+keyboardvisibility = { group = "com.github.yshrsmz", name = "KeyboardVisibilityEvent", version.ref = "keyboardvisibility" }
+androidx-preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+taptargetview = { module = "com.getkeepsafe.taptargetview:taptargetview", version.ref = "taptargetview" }
+
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+androidx-ui = { module = "androidx.compose.ui:ui" }
+androidx-ui-graphics = { module = "androidx.compose.ui:ui-graphics" }
+androidx-materialIconExtended = { module = "androidx.compose.material:material-icons-extended" }
+androidx-material = { module = "androidx.compose.material:material" }
+androidx-material3 = { module = "androidx.compose.material3:material3" }
+androidx-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+androidx-ui-test-manifest = { module = "androidx.compose.ui:ui-test-manifest" }
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+
+aboutlibraries = { group = "com.mikepenz", name = "aboutlibraries", version.ref = "aboutlibraries" }
+aboutlibraries-core = { group = "com.mikepenz", name = "aboutlibraries-core", version.ref = "aboutlibraries" }
+aboutlibraries-compose-core = { group = "com.mikepenz", name = "aboutlibraries-compose", version.ref = "aboutlibraries" }
+aboutlibraries-compose-m3 = { group = "com.mikepenz", name = "aboutlibraries-compose-m3", version.ref = "aboutlibraries" }
+
+review-ktx = { group = "com.google.android.play", name = "review-ktx", version.ref = "reviewKtx" }
+app-update-ktx = { group = "com.google.android.play", name = "app-update-ktx", version.ref = "appUpdateKtx" }
+ratingdialog = { module = "com.codemybrainsout.rating:ratingdialog", version.ref = "ratingdialog" }
+appodeal = { module = "com.appodeal.ads:sdk", version.ref = "appodeal" }
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-crashlytics = { module = "com.google.firebase:firebase-crashlytics" }
+firebase-appcheck = { module = "com.google.firebase:firebase-appcheck-playintegrity" }
+firebase-perf = { module = "com.google.firebase:firebase-perf" }
+firebase-messaging = { module = "com.google.firebase:firebase-messaging" }
+
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib", version.ref = "kotlin" }
+kotlin-test = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+androidx-runner = { group = "androidx.test", name = "runner", version.ref = "runner" }
+androidx-core = { group = "androidx.test", name = "core", version.ref = "core" }
+
+play-services-ads = { module = "com.google.android.gms:play-services-ads", version.ref = "playServicesAds" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+google-android-libraries-mapsplatform-secrets-gradle-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "googleAndroidLibrariesMapsplatformSecretsGradlePlugin" }
+aboutlibraries-plugin = { id = "com.mikepenz.aboutlibraries.plugin", version.ref = "aboutlibraries" }
+google-services-plugin = { id = "com.google.gms.google-services", version.ref = "googleServices" }
+crashlytics-plugin = { id = "com.google.firebase.crashlytics", version.ref = "crashlytics" }
+perf-plugin = { id = "com.google.firebase.firebase-perf", version.ref = "perf" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+android-kotlin-multiplatform-library = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
+
+

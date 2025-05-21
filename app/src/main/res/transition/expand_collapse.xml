@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="300">
+
+    <changeBounds>
+        <targets>
+            <target android:targetId="@id/pitchBlock" />
+            <target android:targetId="@id/speedBlock" />
+        </targets>
+    </changeBounds>
+
+    <fade android:fadingMode="fade_in">
+        <targets>
+            <target android:targetId="@id/pitchBlock" />
+            <target android:targetId="@id/speedBlock" />
+        </targets>
+    </fade>
+
+</transitionSet>

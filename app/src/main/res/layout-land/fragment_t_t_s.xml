@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.TTSFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/languageAndEditTextBlock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/optionBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvOption"
+                style="@style/MyCardViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_normal"
+                android:layout_marginTop="@dimen/spacing_normal"
+                android:layout_marginEnd="@dimen/spacing_small"
+                android:layout_marginBottom="@dimen/spacing_normal"
+                app:cardCornerRadius="@dimen/spacing_small"
+                app:cardElevation="@dimen/spacing_xTiny"
+                app:layout_constraintBottom_toTopOf="@+id/adsBlock"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/controlBlock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:animateLayoutChanges="true">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/tvTitleOptions"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_normal"
+                            android:layout_marginTop="@dimen/spacing_small"
+                            android:layout_marginEnd="@dimen/spacing_normal"
+                            android:layout_marginBottom="@dimen/spacing_small"
+                            android:text="@string/control_audio"
+                            android:textSize="@dimen/text_smallest"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="@+id/ivExpandCollapse"
+                            app:layout_constraintEnd_toStartOf="@+id/ivExpandCollapse"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@id/ivExpandCollapse" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/ivExpandCollapse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_small"
+                            android:layout_marginEnd="@dimen/spacing_normal"
+                            android:layout_marginBottom="@dimen/spacing_small"
+                            android:padding="@dimen/spacing_xTiny"
+                            android:rotation="180"
+                            android:src="@drawable/alt_arrow_down_svgrepo_com"
+                            app:layout_constraintBottom_toTopOf="@+id/lineControlBlock"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/lineControlBlock"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_xxTiny"
+                            android:layout_marginStart="@dimen/spacing_normal"
+                            android:layout_marginEnd="@dimen/spacing_normal"
+                            android:background="@color/gray"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toTopOf="@+id/pitchBlock"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ivExpandCollapse"
+                            tools:visibility="gone" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/pitchBlock"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toTopOf="@+id/speedBlock"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/lineControlBlock"
+                            tools:visibility="gone">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tvPitch"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_normal"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:paddingVertical="@dimen/spacing_xTiny"
+                                android:text="@string/pitch"
+                                android:textSize="@dimen/text_smallest"
+                                app:layout_constraintBottom_toTopOf="@+id/pitchSeekBar"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tvPitchValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:background="@drawable/pitch_value_background"
+                                android:paddingHorizontal="@dimen/spacing_normal"
+                                android:paddingVertical="@dimen/spacing_xTiny"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_smallest"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toTopOf="@+id/pitchSeekBar"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="1.0" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tvPitchReset"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:layout_marginEnd="@dimen/spacing_normal"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:paddingVertical="@dimen/spacing_xTiny"
+                                android:text="@string/reset"
+                                android:textSize="@dimen/text_smallest"
+                                app:layout_constraintBottom_toTopOf="@+id/pitchSeekBar"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatSeekBar
+                                android:id="@+id/pitchSeekBar"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_normal"
+                                android:layout_marginEnd="@dimen/spacing_normal"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:max="200"
+                                android:progressDrawable="@drawable/custom_seekbar_progress"
+                                android:thumb="@drawable/volleyball_2_svgrepo_com"
+                                android:thumbOffset="@dimen/spacing_medium"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/speedBlock"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/pitchBlock"
+                            tools:visibility="gone">
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tvSpeed"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_normal"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:paddingVertical="@dimen/spacing_xTiny"
+                                android:text="@string/speed"
+                                android:textSize="@dimen/text_smallest"
+                                app:layout_constraintBottom_toTopOf="@+id/speedSeekBar"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tvSpeedValue"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:background="@drawable/pitch_value_background"
+                                android:paddingHorizontal="@dimen/spacing_normal"
+                                android:paddingVertical="@dimen/spacing_xTiny"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/text_smallest"
+                                android:textStyle="bold"
+                                app:layout_constraintBottom_toTopOf="@+id/speedSeekBar"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                tools:text="1.0" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/tvSpeedReset"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:layout_marginEnd="@dimen/spacing_normal"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:paddingVertical="@dimen/spacing_xTiny"
+                                android:text="@string/reset"
+                                android:textSize="@dimen/text_smallest"
+                                app:layout_constraintBottom_toTopOf="@+id/speedSeekBar"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatSeekBar
+                                android:id="@+id/speedSeekBar"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_normal"
+                                android:layout_marginEnd="@dimen/spacing_normal"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:max="200"
+                                android:progressDrawable="@drawable/custom_seekbar_progress"
+                                android:thumb="@drawable/volleyball_2_svgrepo_com"
+                                android:thumbOffset="@dimen/spacing_medium"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <View
+                        android:id="@+id/viewVoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xxTiny"
+                        android:layout_marginStart="@dimen/spacing_normal"
+                        android:layout_marginEnd="@dimen/spacing_normal"
+                        android:background="@color/gray"
+                        android:visibility="gone"
+                        tools:visibility="gone" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/voiceBlock"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone"
+                        tools:visibility="gone">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/languageSelectionContainer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/ivFlag"
+                                android:layout_width="@dimen/spacing_xDouble"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/spacing_normal"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:padding="@dimen/spacing_xTiny"
+                                app:layout_constraintBottom_toBottomOf="@id/textLanguageBlock"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@id/textLanguageBlock"
+                                app:srcCompat="@drawable/flag_2_svgrepo_com"
+                                app:strokeColor="@color/colorPrimary"
+                                app:strokeWidth="@dimen/spacing_xxTiny" />
+
+                            <LinearLayout
+                                android:id="@+id/textLanguageBlock"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="@dimen/spacing_small"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@+id/ivOpen"
+                                app:layout_constraintStart_toEndOf="@+id/ivFlag"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvLanguage"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/spacing_small"
+                                    android:layout_marginEnd="@dimen/spacing_small"
+                                    android:paddingVertical="@dimen/spacing_xTiny"
+                                    android:textSize="@dimen/text_smallest"
+                                    android:textStyle="bold"
+                                    tools:text="Indonesia" />
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:id="@+id/tvLanguageDetail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/spacing_small"
+                                    android:layout_marginEnd="@dimen/spacing_small"
+                                    android:paddingVertical="@dimen/spacing_xTiny"
+                                    android:textSize="@dimen/text_smallest"
+                                    tools:text="Indonesia 1 (id-ID-language)" />
+                            </LinearLayout>
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/ivOpen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_small"
+                                android:layout_marginEnd="@dimen/spacing_normal"
+                                android:layout_marginBottom="@dimen/spacing_small"
+                                android:padding="@dimen/spacing_xTiny"
+                                android:src="@drawable/alt_arrow_right_svgrepo_com"
+                                app:layout_constraintBottom_toBottomOf="@id/textLanguageBlock"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/textLanguageBlock" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/adsBlock"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvOption">
+
+                <include
+                    android:id="@+id/customBanner"
+                    layout="@layout/custom_banner_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.appodeal.ads.BannerView
+                    android:id="@+id/appodealBannerView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:visibility="gone" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/languageAndEditTextBlock"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scrollView"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvEditText"
+            style="@style/MyCardViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:layout_marginTop="@dimen/spacing_normal"
+            android:layout_marginEnd="@dimen/spacing_normal"
+            android:layout_marginBottom="@dimen/spacing_normal"
+            android:focusableInTouchMode="true"
+            app:cardCornerRadius="@dimen/spacing_small"
+            app:cardElevation="@dimen/spacing_xTiny"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/editTextBlock"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvTextLimitIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:textSize="@dimen/text_smallest"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="120/∞" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cvEditTextBackground"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    app:cardBackgroundColor="@color/light_gray"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/nestedScrollView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTextLimitIndicator">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/editText"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="@dimen/spacing_tiny"
+                            android:layout_marginTop="@dimen/spacing_tiny"
+                            android:layout_marginEnd="@dimen/spacing_tiny"
+                            android:autofillHints="false"
+                            android:gravity="bottom|start"
+                            android:hint="@string/type_here"
+                            android:inputType="textMultiLine"
+                            android:scrollbars="vertical"
+                            android:textColorHint="@color/colorAccent"
+                            android:textSize="@dimen/text_smallest"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nestedScrollView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="@dimen/spacing_small"
+                    android:fillViewport="true"
+                    app:layout_constraintBottom_toTopOf="@+id/speakBlock"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cvEditTextBackground"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/pasteBlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/spacing_small"
+                            android:layout_marginBottom="@dimen/spacing_xTiny">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/pasteButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/spacing_xTiny"
+                                android:src="@drawable/clipboard_text_svgrepo_com"
+                                app:layout_constraintBottom_toTopOf="@+id/pasteText"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/pasteText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/spacing_xTiny"
+                                android:text="@android:string/paste"
+                                android:textSize="@dimen/text_smallest"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/pasteButton"
+                                app:layout_constraintStart_toStartOf="@+id/pasteButton"
+                                app:layout_constraintTop_toBottomOf="@+id/pasteButton" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/saveBlock"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/spacing_xTiny"
+                            android:layout_marginBottom="@dimen/spacing_xTiny"
+                            android:enabled="false">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/saveButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/spacing_xTiny"
+                                android:src="@drawable/diskette_svgrepo_com"
+                                android:tint="@color/colorAccent"
+                                app:layout_constraintBottom_toTopOf="@+id/saveText"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:id="@+id/saveText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingHorizontal="@dimen/spacing_xTiny"
+                                android:text="@string/save"
+                                android:textSize="@dimen/text_smallest"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="@+id/saveButton"
+                                app:layout_constraintStart_toStartOf="@+id/saveButton"
+                                app:layout_constraintTop_toBottomOf="@+id/saveButton" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/speakBlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:enabled="false"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/nestedScrollView"
+                    app:layout_constraintStart_toStartOf="@+id/nestedScrollView">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/speakButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/spacing_xTiny"
+                        android:src="@drawable/user_speak_svgrepo_com"
+                        android:tint="@color/colorAccent"
+                        app:layout_constraintBottom_toTopOf="@+id/speakText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/animationSpeak"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:padding="@dimen/spacing_xTiny"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toTopOf="@+id/speakText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/animation_waiting" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/speakText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingHorizontal="@dimen/spacing_xTiny"
+                        android:text="@string/play"
+                        android:textSize="@dimen/text_smallest"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/speakButton"
+                        app:layout_constraintStart_toStartOf="@+id/speakButton"
+                        app:layout_constraintTop_toBottomOf="@+id/speakButton" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
